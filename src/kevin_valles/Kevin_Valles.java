@@ -18,6 +18,22 @@ public class Kevin_Valles {
     
         System.out.println("Hola Mundo Cruel");    
         
+        // probaremos la solucion
+        // crear un usuario hipotetico
+        Usuario u = new Usuario();
+        
+        // se asigna el valor de altura
+        u.altura = 1.68f;
+        // se asigna el valor de peso
+        u.peso = 64f;
+        
+        // genera el modelo
+        Imc imc = new Imc();
+        
+        // se inicializa el metodo calcular
+        imc.calcular(u);
+        // muestra el resultado de la operacion
+        System.out.println("El valor del IMC es " + imc.calcular(u));
     }
     
 }
