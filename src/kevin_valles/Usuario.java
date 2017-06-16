@@ -12,4 +12,22 @@ package kevin_valles;
 public class Usuario {
     
     float peso, altura;
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso)throws NumeroNoNegativoException {
+        ValidacionUsuario.ValidarNoNegativo(peso);
+        this.peso = peso;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) throws NumeroNoNegativoException{
+        ValidacionUsuario.ValidarNoNegativo(altura);
+        this.altura = altura;
+    }
 }
